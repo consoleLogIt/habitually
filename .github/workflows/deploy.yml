@@ -13,10 +13,14 @@ jobs:
       - uses: actions/setup-node@master
         with:
             node-version:'14'
-      - run : yarn ci
-      - run : yarn build
+      - run: cp  firebase.json
+      - run: cp  .firebaserc
+      - run: yarn
+      - run: yarn build
+      - run: ls    
+
         uses : w9jds/firebase-action@master
         with:
-          args: deploy --only hosting
+          args: deploy --only hosting : habitualli
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}  
