@@ -21,32 +21,5 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `src directory structure'
 
- |-- src'
-  '        |-- App.css',
-  '        |-- App.js',
-  '        |-- index.css',
-  '        |-- index.js',
-  '        |-- store.js',
-  '        |-- actions',
-  '        |   |-- creators.js',
-  '        |   |-- types.js',
-  '        |-- Components',
-  '        |   |-- index.js',
-  '        |   |-- dailyView',
-  '        |   |   |-- DailyView.jsx',
-  '        |   |-- header',
-  '        |   |   |-- HomeHeader.jsx',
-  '        |   |-- homeView',
-  '        |   |   |-- HomeView.jsx',
-  '        |   |-- modal',
-  '        |   |   |-- AddHabbit.jsx',
-  '        |   |-- sidebar',
-  '        |   |   |-- Sidebar.jsx',
-  '        |   |   |-- sidebar.module.css',
-  '        |   |   |-- TaskList.jsx',
-  '        |   |-- weeklyView',
-  '        |       |-- WeeklyView.jsx',
-  '        |-- reducers',
-  '            |-- dailyReducer.js',
-  '            |-- index.js',
-  '            |-- weeklyReducer.js',
+  .
+├── build 
