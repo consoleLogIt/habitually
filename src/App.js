@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react';
+
+//material ui components
+import { Grid } from "@material-ui/core";
+import {useStore} from 'react-redux';
+ // prject components
+import { Sidebar, HomeView } from "./Components";
 
 function App() {
+  const [update,setUpdate] = useState(false);
+  const store = useStore();
+  
+
+  store.subscribe(()=>{
+    setUpdate(!update)
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid container  >
+      <Sidebar />
+      <HomeView />
+    </Grid>
   );
 }
 

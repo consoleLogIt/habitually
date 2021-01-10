@@ -1,0 +1,6 @@
+export const ADD_HABIT = "ADD_HABIT"
+export const CHANGE_TASK_STATUS = "CHANGE_TASK_STATUS";
+export const DELETE_HABIT = "DELETE_HABIT"
+export const FETCH_WEEK_VIEW = "FETCH_WEEK_VIEW";
+export const GET_CURRENT_WEEK = "GET_CURRENT_WEEK";
+export const TASK_ICON_CHANGE = "TASK_ICON_CHANGE";

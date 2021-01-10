@@ -1,24 +1,24 @@
-name : Firebase Deploy
+# name : Firebase Deploy
 
-on: 
-  push:
-      branches:
-            -master
+# on: 
+#   push:
+#       branches:
+#             -master
 
-jobs:
- build:
+# jobs:
+#  build:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
-        with:
-            node-version:'14'
-      - run: yarn
-      - run: yarn build
-        uses : w9jds/firebase-action@master
-        with:
-          args: deploy --only hosting 
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}  
+#     steps:
+#       - uses: actions/checkout@master
+#       - uses: actions/setup-node@master
+#         with:
+#             node-version:'14'
+#       - run: yarn
+#       - run: yarn build
+#         uses : w9jds/firebase-action@master
+#         with:
+#           args: deploy --only hosting 
+#         env:
+#           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}  
