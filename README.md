@@ -19,7 +19,34 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `src directory structure'
+### `Directory Structure`
 
-  .
-├── build 
+ 
+         |-- App.css
+         |-- App.js
+         |-- index.css
+         |-- index.js
+         |-- store.js
+         |-- actions
+                  |-- creators.js
+                  |-- types.js
+         |-- Components
+                  |-- index.js
+                  |-- dailyView
+                           |-- DailyView.jsx
+                  |-- header
+                           |-- HomeHeader.jsx
+                  |-- homeView
+                           |-- HomeView.jsx
+                  |-- modal
+                           |-- AddHabbit.jsx
+                  |-- sidebar
+                           |-- Sidebar.jsx
+                           |-- sidebar.module.css
+                           |-- TaskList.jsx
+                  |-- weeklyView
+                           |-- WeeklyView.jsx
+                  |-- reducers
+                           |-- dailyReducer.js
+                           |-- index.js
+                           |-- weeklyReducer.js
