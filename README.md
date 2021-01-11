@@ -22,31 +22,31 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ### `Directory Structure`
 
  
-         |-- App.css
+         |-- App.css   
          |-- App.js
          |-- index.css
-         |-- index.js
-         |-- store.js
-         |-- actions
-                  |-- creators.js
-                  |-- types.js
+         |-- index.js                             # app entry point
+         |-- store.js                             # find create-store here
+         |-- actions                              # find all actions inside this
+                  |-- creators.js                    # find all action creators here
+                  |-- types.js                       # find all action types here
          |-- Components
-                  |-- index.js
-                  |-- dailyView
+                  |-- index.js                       # import and export all components from here 
+                  |-- dailyView                      # for displaying habits in daily view 
                            |-- DailyView.jsx
-                  |-- header
+                  |-- header                         # for displaying header of the app
                            |-- HomeHeader.jsx
-                  |-- homeView
+                  |-- homeView                       # container for daily or week view
                            |-- HomeView.jsx
-                  |-- modal
+                  |-- modal                          # pop-up for adding habits
                            |-- AddHabbit.jsx
-                  |-- sidebar
-                           |-- Sidebar.jsx
+                  |-- sidebar                        # container for habits
+                           |-- Sidebar.jsx  
                            |-- sidebar.module.css
                            |-- TaskList.jsx
-                  |-- weeklyView
+                  |-- weeklyView                     # for displaying habits in week view
                            |-- WeeklyView.jsx
-                  |-- reducers
-                           |-- dailyReducer.js
-                           |-- index.js
-                           |-- weeklyReducer.js
+                  |-- reducers                       # find all reducers logic here
+                           |-- dailyReducer.js       # reducer logic for daily view
+                           |-- index.js              # find combine reducer here  
+                           |-- weeklyReducer.js      # reducer logic for week view
